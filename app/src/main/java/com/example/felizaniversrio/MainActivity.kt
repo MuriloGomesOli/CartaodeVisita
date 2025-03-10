@@ -6,12 +6,15 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -34,7 +37,7 @@ class MainActivity : ComponentActivity() {
                             .padding(innerPadding)
                     ) {
                         Image(
-                            painter = painterResource(id = R.drawable.cores_de_fundo_ef83sn08yxnzfbo5),
+                            painter = painterResource(id = R.drawable.androidparty),
                             contentDescription = null,
                             contentScale = ContentScale.Crop,
                             modifier = Modifier.fillMaxSize()
@@ -86,16 +89,14 @@ fun ProfileSection() {
             color = Color.Black
         )
 
-        // 🔹 Cargo
         Text(
             text = "Android Developer Extraordinaire",
             fontSize = 18.sp,
             fontWeight = FontWeight.Normal,
-            color = Color.Red
+            color = Color.Black
         )
     }
 }
-
 
 @Composable
 fun ContactSection() {
@@ -138,14 +139,12 @@ fun GreetingPreview() {
         Box(
             modifier = Modifier.fillMaxSize()
         ) {
-            // Fundo
             Image(
-                painter = painterResource(id = R.drawable.cores_de_fundo_ef83sn08yxnzfbo5),
+                painter = painterResource(id = R.drawable.androidparty),
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.fillMaxSize()
             )
-
 
             Column(
                 modifier = Modifier.fillMaxSize(),
