@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
                             .padding(innerPadding)
                     ) {
                         Image(
-                            painter = painterResource(id = R.drawable.androidparty),
+                            painter = painterResource(id = R.drawable.ic_launcher_background),
                             contentDescription = null,
                             contentScale = ContentScale.Crop,
                             modifier = Modifier.fillMaxSize()
@@ -86,7 +86,7 @@ fun ProfileSection() {
             text = "Jennifer Doe",
             fontSize = 32.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.Black
+            color = Color.Blue
         )
 
         Text(
@@ -140,7 +140,7 @@ fun GreetingPreview() {
             modifier = Modifier.fillMaxSize()
         ) {
             Image(
-                painter = painterResource(id = R.drawable.androidparty),
+                painter = painterResource(id = R.drawable.ic_launcher_background),
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.fillMaxSize()
